@@ -22,3 +22,9 @@ tiktok:
 ・streamer: "<<TikTok ID>>"・・・接続するTikTok IDを指定する
 
 ・defaultmobname・・・ギフターの名前で差し替えれないシチュエーションのデフォルトモブ名を指定する
+
+# 実行コマンドファイルについて
+
+<<サーバーフォルダ>>\plugins\baisound フォルダ配下にコマンドファイルを設置して頂く事で再起動されたマイクラサーバーでコマンドが使用できるようになります
+
+https://github.com/baisound/baisound-command
