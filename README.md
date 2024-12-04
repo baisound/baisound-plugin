@@ -13,6 +13,7 @@
 ```
 tiktok:
   log_directory: "C:\\WorkFolders\\logs"  # ログを保存するディレクトリ（デフォルト: logs/tiktok）
+  gift_directory: "C:\\WorkFolders\\logs\\giftimages"
   streamer: "<<TikTok ID>>"
   defaultmobname: "弱ったバイさん"
 ```
@@ -28,3 +29,23 @@ tiktok:
 <<サーバーフォルダ>>\plugins\baisound フォルダ配下にコマンドファイルを設置して頂く事で再起動されたマイクラサーバーでコマンドが使用できるようになります
 
 https://github.com/baisound/baisound-command
+
+
+
+# バージョン履歴
+
+## 2.0.1
+対応するギフトID、ギフトコスト、ギフト名、ギフト画像URLの一覧作成機能追加
+config.yml に以下情報保存先ディレクトリを追記すること
+
+```
+  gift_directory: "C:\\WorkFolders\\logs\\giftimages"
+```
+
+## 2.0.0
+ギフト情報の記録機能追加
+config.yml に以下ログを保存するディレクトリ先を追記すること
+
+```
+  log_directory: "C:\\WorkFolders\\logs"  # ログを保存するディレクトリ（デフォルト: logs/tiktok）
+```
