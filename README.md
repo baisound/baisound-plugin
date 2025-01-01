@@ -21,6 +21,7 @@ tiktok:
 ・log_directory・・・Windowsのどこにログを保存するのか
 
 ・streamer: "<<TikTok ID>>"・・・接続するTikTok IDを指定する
+※ <<TikTok ID>> を自分のIDに置き換えてくださいませ。例：TikTok IDが@thisisid だったとする。thisisid を設定するので記述は「streamer: "thisisid"」となる
 
 ・defaultmobname・・・ギフターの名前で差し替えれないシチュエーションのデフォルトモブ名を指定する
 
