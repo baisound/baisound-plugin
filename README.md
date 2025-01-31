@@ -63,3 +63,7 @@ config.yml に以下ログを保存するディレクトリ先を追記するこ
 ```
   log_directory: "C:\\WorkFolders\\logs"  # ログを保存するディレクトリ（デフォルト: logs/tiktok）
 ```
+
+## 3.0.2
+ライセンスキーに対応しています
+baisound.admin.properties を開いて運営に発行してもらったライセンスキーとトークンを設定してください

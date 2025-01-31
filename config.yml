@@ -1,0 +1,50 @@
+tiktok:
+  log_directory: C:\WorkFolders\logs # ギフトログの保存先ディレクトリ
+  gift_directory: C:\WorkFolders\logs\giftimages # ギフトデータ用のサブディレクトリ
+  #  streamer: "exampleStreamer" # 接続するTikTokのストリーマー名
+  #  endpoint_url: "http://127.0.0.1/api/v1/tiktok/" # APIのエンドポイントURL
+  endpoint_url: http://52.195.57.50/api/v1/tiktok/ # APIのエンドポイントURL
+  reconnect_interval: 5
+  reconnect_timeout: 16
+  # TikTokストリーマー名（必須）
+  streamer: xxxxxxxxx # TikTokストリーマーのユーザー名
+  defaultmobname: 弱ったバイさん
+
+commandBlockCheck:
+  enabled: true # この機能の有効/無効
+  blocks:
+  - x: -6
+    y: -62
+    z: 37
+    requiredCustomName: TrybaiCommandBlock
+  - x: -6
+    y: -62
+    z: 36
+    requiredCustomName: SecondCommandBlock
+  - x: -5
+    y: -62
+    z: 37
+    requiredCustomName: ''
+  targetPlayers: # このリストに指定したプレイヤーがジョインしたら発火
+    - baisound
+
+cloggerKey: jguMIZZEDXvSF2Y73RnxWQkQkpmAAQxg
+
+# ログ関連の設定
+settings:
+  enable_logging: true # ギフトログの保存を有効化するか（true/false）
+
+death:
+  enable: true
+  death_count:
+    '1':
+      command: say {player} 死亡 {death_count} 回目!
+      sound: custom.sounds.kill1
+    '5':
+      command: give {player} diamond 1
+      sound: custom.sounds.kill5
+    '10':
+      command: say {player} 死亡 {death_count} 回目!
+      sound: custom.sounds.kill10
+currentResourcePackVersion: 1
+currentDataPackVersion: 1
