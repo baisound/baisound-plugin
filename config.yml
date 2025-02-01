@@ -3,15 +3,15 @@ tiktok:
   gift_directory: C:\WorkFolders\logs\giftimages # ギフトデータ用のサブディレクトリ
   #  streamer: "exampleStreamer" # 接続するTikTokのストリーマー名
   #  endpoint_url: "http://127.0.0.1/api/v1/tiktok/" # APIのエンドポイントURL
-  endpoint_url: http://52.195.57.50/api/v1/tiktok/ # APIのエンドポイントURL
   reconnect_interval: 5
   reconnect_timeout: 16
   # TikTokストリーマー名（必須）
   streamer: xxxxxxxxx # TikTokストリーマーのユーザー名
-  defaultmobname: 弱ったバイさん
+  targetPlayers: # Minecraftのプレイヤー
+    - baisound
+defaultmobname: 弱ったバイさん
 
 commandBlockCheck:
-  enabled: true # この機能の有効/無効
   blocks:
   - x: -6
     y: -62
@@ -25,8 +25,6 @@ commandBlockCheck:
     y: -62
     z: 37
     requiredCustomName: ''
-  targetPlayers: # このリストに指定したプレイヤーがジョインしたら発火
-    - baisound
 
 cloggerKey: jguMIZZEDXvSF2Y73RnxWQkQkpmAAQxg
 
