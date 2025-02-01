@@ -1,0 +1,11 @@
+options:
+  - text: "ゾンビ召喚2！！"
+    command: "baisound {PleyerMe} zombie 5 5 {ListenerName}"
+  - text: "スケルトン召喚2！！"
+    command: "baisound {PleyerMe} skeleton 5 5 {ListenerName}"
+  - text: "クリーパー召喚2！！"
+    command: "baisound {PleyerMe} creeper 5 5 {ListenerName}"
+sound_effects:
+  start: "BLOCK_NOTE_BLOCK_HAT"
+  tick: "BLOCK_NOTE_BLOCK_PLING"
+  end: "ENTITY_PLAYER_LEVELUP"

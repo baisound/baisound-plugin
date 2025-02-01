@@ -1,0 +1,13 @@
+options:
+  - text: "強化シャベル"
+    command: "give @a minecraft:netherite_shovel"
+  - text: "強制晴れ"
+    command: "weather clear"
+  - text: "ネザーライトダガー２刀龍"
+    command: "give @a epicfight:netherite_dagger 2"
+  - text: "クリーパー"
+    command: "baisound {PleyerMe} creeper 3 2 {ListenerName}"
+sound_effects:
+  start: "BLOCK_NOTE_BLOCK_HAT"
+  tick: "BLOCK_NOTE_BLOCK_PLING"
+  end: "ENTITY_PLAYER_LEVELUP"

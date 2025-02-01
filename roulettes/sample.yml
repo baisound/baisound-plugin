@@ -1,0 +1,11 @@
+options:
+  - text: "ゾンビ召喚！！"
+    command: "execute at @p run summon minecraft:zombie ~5 ~ ~"
+  - text: "スケルトン召喚！！"
+    command: "execute at @p run summon minecraft:skeleton ~5 ~ ~"
+  - text: "クリーパー召喚！！"
+    command: "execute at @p run summon minecraft:creeper ~5 ~ ~"
+sound_effects:
+  start: "BLOCK_NOTE_BLOCK_HAT"
+  tick: "BLOCK_NOTE_BLOCK_PLING"
+  end: "ENTITY_PLAYER_LEVELUP"
