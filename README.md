@@ -42,9 +42,12 @@ Tボタンを押してコマンド入力モードに切り替えてコマンド�
 ゾンビを１０体５Tickの速度でゾンビにtestという名前をつけて沸かせる
 /baisoundまで入力すると設置されている実行コマンドが実行可能一覧としてリスト表示されます。
 
+★各種シーケンス図
+
 https://www.mermaidchart.com/raw/35eebe05-8007-4f82-993e-31a6d91fa728?theme=light&version=v0.1&format=svg
 
-各種REST APIドキュメント
+★各種REST APIドキュメント
+
 http://52.195.57.50/api/xpeC4I0Z1Xu2vOrUg7KE0kxut9Bwxx#/ライセンス/d7fc17545a832a063e504e32431a6f0f
 
 # バージョン履歴
