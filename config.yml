@@ -7,8 +7,10 @@ tiktok:
   reconnect_timeout: 16
   # TikTokストリーマー名（必須）
   streamer: xxxxxxxxx # TikTokストリーマーのユーザー名
-  targetPlayers: # Minecraftのプレイヤー
-    - baisound
+
+targetPlayers: # Minecraftのプレイヤー
+  - baisound
+
 defaultmobname: 弱ったバイさん
 
 commandBlockCheck:
