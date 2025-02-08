@@ -7,11 +7,10 @@ tiktok:
   reconnect_timeout: 16
   # TikTokストリーマー名（必須）
   streamer: xxxxxxxxx # TikTokストリーマーのユーザー名
+  defaultmobname: 弱ったバイさん
 
 targetPlayers: # Minecraftのプレイヤー
   - baisound
-
-defaultmobname: 弱ったバイさん
 
 commandBlockCheck:
   blocks:
@@ -28,6 +27,7 @@ commandBlockCheck:
     z: 37
     requiredCustomName: ''
 
+# 開発者専用：エンドユーザーには排除して配布する事
 cloggerKey: jguMIZZEDXvSF2Y73RnxWQkQkpmAAQxg
 
 # ログ関連の設定
