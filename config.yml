@@ -18,14 +18,6 @@ commandBlockCheck:
     y: -62
     z: 37
     requiredCustomName: TrybaiCommandBlock
-  - x: -6
-    y: -62
-    z: 36
-    requiredCustomName: SecondCommandBlock
-  - x: -5
-    y: -62
-    z: 37
-    requiredCustomName: ''
 
 # 開発者専用：エンドユーザーには排除して配布する事
 cloggerKey: jguMIZZEDXvSF2Y73RnxWQkQkpmAAQxg

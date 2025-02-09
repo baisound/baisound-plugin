@@ -51,6 +51,10 @@ https://www.mermaidchart.com/raw/35eebe05-8007-4f82-993e-31a6d91fa728?theme=ligh
 http://52.195.57.50/api/xpeC4I0Z1Xu2vOrUg7KE0kxut9Bwxx#/ライセンス/d7fc17545a832a063e504e32431a6f0f
 
 # バージョン履歴
+## 4.0.8
+プラグイン初回設置時にplugins/baisoundディレクトリが存在しない場合に作成し、ファイル設置するように
+ギフト一覧ファイル作成をサーバー初回起動時のみとして再接続時には作成しようとしないように修正
+
 ## 4.0.7 
 {PlayerMe}が正しく取得できないケースがあったのを修正。
 config.yml の targetPlayers から最初の一人目の設定を参照して実行するように修正
