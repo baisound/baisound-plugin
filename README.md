@@ -1,56 +1,11 @@
 # baisound-plugin
 
-<<サーバーフォルダ>>\plugins 直下にダウンロードしたJARファイルを設置する
-
-設置したあとサーバーを起動する
-
-※ サーバーの起動の仕方についてはここでは触れませんので別途お調べくださいませ。
-
-<<サーバーフォルダ>>\plugins\baisound フォルダの下にconfig.yml を配置
-
-内容を以下のようにする
-
-```
-tiktok:
-  log_directory: "C:\\WorkFolders\\logs"  # ログを保存するディレクトリ（デフォルト: logs/tiktok）
-  gift_directory: "C:\\WorkFolders\\logs\\giftimages"
-  streamer: "<<TikTok ID>>"
-  defaultmobname: "弱ったバイさん"
-```
-
-・log_directory・・・Windowsのどこにログを保存するのか
-
-・streamer: "<<TikTok ID>>"・・・接続するTikTok IDを指定する
-※ <<TikTok ID>> を自分のIDに置き換えてくださいませ。例：TikTok IDが@thisisid だったとする。thisisid を設定するので記述は「streamer: "thisisid"」となる
-
-・defaultmobname・・・ギフターの名前で差し替えれないシチュエーションのデフォルトモブ名を指定する
-
-# 実行コマンドファイルについて
-
-<<サーバーフォルダ>>\plugins\baisound フォルダ配下にコマンドファイルを設置して頂く事で再起動されたマイクラサーバーでコマンドが使用できるようになります
-
-https://github.com/baisound/baisound-command
-
-# 実行コマンドファイルの使い方について
-
-クライアントにて以下の要領で実行可能です
-
-Tボタンを押してコマンド入力モードに切り替えてコマンドを入力
-
-例
-/baisound zombie 10 5 test
-ゾンビを１０体５Tickの速度でゾンビにtestという名前をつけて沸かせる
-/baisoundまで入力すると設置されている実行コマンドが実行可能一覧としてリスト表示されます。
-
-★各種シーケンス図
-
-https://www.mermaidchart.com/raw/35eebe05-8007-4f82-993e-31a6d91fa728?theme=light&version=v0.1&format=svg
-
-★各種REST APIドキュメント
-
-http://52.195.57.50/api/xpeC4I0Z1Xu2vOrUg7KE0kxut9Bwxx#/ライセンス/d7fc17545a832a063e504e32431a6f0f
+本プラグインの使用方法に関しては別途配布されているマニュアルを参照くださいませ。
 
 # バージョン履歴
+## 4.0.10
+ギフト連携コマンド実行＆いいね＆シェアー＆コメント＆サブスクライブアクション連動
+
 ## 4.0.9
 ギフト登録REST APIの受け口にルームID追加したのでそれに合わせたルームIDを投げる修正
 

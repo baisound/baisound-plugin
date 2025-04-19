@@ -7,10 +7,12 @@ tiktok:
   reconnect_timeout: 16
   # TikTokストリーマー名（必須）
   streamer: xxxxxxxxx # TikTokストリーマーのユーザー名
-  defaultmobname: 弱ったバイさん
+  mytiktokid: xxxxxxxxx # 私のTikTokID
+
+defaultmobname: 弱ったバイさん
 
 targetPlayers: # Minecraftのプレイヤー
-  - baisound
+  - xxxxxxxxx # 私のMinecraftのプレイヤー
 
 commandBlockCheck:
   blocks:
@@ -18,9 +20,6 @@ commandBlockCheck:
     y: -62
     z: 37
     requiredCustomName: TrybaiCommandBlock
-
-# 開発者専用：エンドユーザーには排除して配布する事
-cloggerKey: jguMIZZEDXvSF2Y73RnxWQkQkpmAAQxg
 
 # ログ関連の設定
 settings:
@@ -40,3 +39,593 @@ death:
       sound: custom.sounds.kill10
 currentResourcePackVersion: 1
 currentDataPackVersion: 1
+
+# ログ関連の設定
+settings:
+  enable_logging: true # ギフトログの保存を有効化するか（true/false）
+  save_gift_images: false # ギフトの画像データを保存するか（true/false）
+  retry_interval_seconds: 5 # APIリクエスト失敗時の再試行間隔（秒）
+
+# ログ関連の設定
+settings:
+  enable_logging: true # ギフトログの保存を有効化するか（true/false）
+  save_gift_images: false # ギフトの画像データを保存するか（true/false）
+  retry_interval_seconds: 5 # APIリクエスト失敗時の再試行間隔（秒）
+
+# Log Gifts, Likes, .. in console.
+EnableConsoleLogger: true
+
+# Start SuperStream when server starts
+# If this is disabled you may use /ss start to start listeners.
+StartOnBoot: true
+
+CommentListener:
+  # Available variables: <player> <user> <message>
+  enabled: true
+  format: '&7<user>: &f<message>'
+  # here you can define words in chat that will defined trigger actions.
+  # here you can define words in chat that will defined trigger actions.
+  hooks:
+    w:
+      spawn:
+        firework_rocket:
+          type: firework_rocket
+          addSenderName: true
+          senderNameColor: '&e'
+GiftListener:
+  enabled: true
+  SubscriberDoubleAction: true
+  default:
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound skeleton <giftCount> 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  # [Heart Me] : {7934} : [1]
+  '7934':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - give @p minecraft:totem_of_undying 1
+      title:
+        text: '&e<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  # [GG] : {8286} : [1]
+  '6064':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound skeleton 2 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  # [Rose] : {5655} : [1]
+  '5655':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound zombie 2 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  # Finger Heart
+  '5487':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound kirarabbit 4 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  # [Rosa] : {7997} : [10] [Rosa] : {8913} : [10]
+  '7997':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound husk 3 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  '8913':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound husk 3 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  # #[Venom] : {12481} : [10] : [10] Friendship Necklace[9947]
+  '12481':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound creeper 2 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  '9947':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound creeper 2 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  # [Gamepad] : {6052} : [10]
+  '6052':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound animals 3 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  '9311':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound animals 3 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  '13010':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound animals 3 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  '12898':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound animals 3 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+  # Pumped Up[9077] 筋肉ムキムキ:回復 [10]
+  '9077':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - effect give @p minecraft:regeneration 15 5
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # 香水
+  '5658':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound pig 30 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # [Doughnut] : {5879} : [30] ゴキブリｘ10
+  '5879':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound silverfish 7 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # 折り鶴(99)[Paper Crane] : {5659} : [99]=TNTx1
+  '5659':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound tnt1 1 7 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # Confetti[5585] [100]
+  '5585':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound husk 40 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # [Game Controller] : {6467} : [100] "8343","100","Hand Heart","1"
+  '6467':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound zombie2 70 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  '8343':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound zombie2 70 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # 鍵と鍵穴 Lock and Key[5880]=かな床
+  '5880':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound anvil 20 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # サングラス Sunglasses [5509]=かみなり
+  '5509':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound lightning_bold 1 1 test
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # ゲーマーズキャット(199)[Gamer Cat] : {7549} : [199]＝ゾンビｘ１５０とスケルトンｘ１５０
+  '7549':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound zombie-skeleton 110 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # [Fruit Friends] : {9465} : [299] 花冠 6437
+  '6437':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound zombie-skeleton 110 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # ゲームキーボード(299)Gaming Keyboard[7103]=アーマーゾンビｘ３０ "10641","199","The Passion Rose","1"
+  '7103':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound zombie-armer 20 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  '10641':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound zombie-armer 20 5 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # 強制雷雨 フルーツの友達  強制雷雨
+  '9465':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound weather 1 1 test
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&f強制雷雨発動'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # 強制晴れ 踊る花  強制晴れ
+  '10574':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound weather2 1 1 test
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&f強制晴発動'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # すばらしい!(500)You’re Amazing[9948]=TNTx8
+  '9948':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound tnt2-50x50 1 1 test
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # Corgi(500)[6267]
+  '6267':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound creeper2 40 7 <sender>
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # Money Gun(500)[7168]=装備なし [Money Gun] : {5739}{6365}{7168} : [500]
+  '5739':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - clear @p
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  '6365':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - clear @p
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  '7168':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - clear @p
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # 列車(899)Train[5978]=砂追加x2
+  '5978':
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - baisound cp50x50 1 1 test
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+        fontsize: 1
+  # アーケードゲーム(1200)[Arcade Game] : {5876,7041} : [1200]=ウォーデンｘ２
+  '5876':
+    actions:
+      execute:
+        asPlayer: true
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+      spawn:
+        warden:
+          type: WARDEN
+          amount: 2
+          addSenderName: true
+          senderNameColor: '&e'
+  '7041':
+    actions:
+      execute:
+        asPlayer: true
+      title:
+        text: '&5<gift>'
+        subtitle: '&f<sender>&8&fありがとう'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+      spawn:
+        warden:
+          type: WARDEN
+          amount: 2
+          addSenderName: true
+          senderNameColor: '&e'
+# Like listener only supports execute action.
+# Goals:
+#  1: ⇒ 10いいね
+#  10: ⇒ 100いいね
+LikeListener:
+  enabled: true
+  actions:
+    spawn:
+      cod:
+        type: COD
+        addSenderName: true
+        senderNameColor: '&e'
+  Goals:
+    '10':
+      recurring: true
+      actions:
+        execute:
+          asPlayer: true
+          commands:
+          - baisound villager2 1 10 <sender>
+        title:
+          text: '&e豚召喚'
+          subtitle: '&f<sender>'
+          fadeIn: 10
+          stay: 70
+          fadeOut: 20
+
+FollowListener:
+  # Available variables: <sender> <player>
+  enabled: true
+  actions:
+    spawn:
+      dolphin:
+        type: DOLPHIN
+        addSenderName: true
+        senderNameColor: '&e'
+
+SubscriptionListener:
+  # Available variables: <sender> <player>
+  enabled: true
+  ForEach:
+    enabled: true
+    actions:
+      execute:
+        asPlayer: true
+        commands:
+        - "tp @a ~ ~20 ~"
+      title:
+        text: '&e大ジャンプ発動！！'
+        subtitle: '&f<sender>&8&fありがとーう！！'
+        fadeIn: 10
+        stay: 70
+        fadeOut: 20
+
+ShareListener:
+  # Available variables: <sender> <player>
+  enabled: true
+  actions:
+    execute:
+      asPlayer: true
+      commands:
+      - baisound allay 1 10 <sender>
+    title:
+      text: '&eアレイ召喚'
+      subtitle: '&f<sender>&8&fシェアサンキュー！'
+      fadeIn: 10
+      stay: 70
+      fadeOut: 20
